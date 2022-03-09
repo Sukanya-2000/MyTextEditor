@@ -38,27 +38,9 @@ Right Click the action -> "Go to Slot" -> Triggered (bool) (Ok). Function "on_ac
 
 checked ? ui->textEdit->setFontWeight(QFont::Bold) : ui->textEdit->setFontWeight(QFont::Normal);
 
-SubScript Superscript : oid MainWindow::on_actionSuperscript_triggered() { Subscript -> setChecked(false); QTextCharFormat format;
 
-if(Superscript -> isChecked())
-    format.setVerticalAlignment(QTextCharFormat::AlignSuperScript);
-else
-    format.setVerticalAlignment(QTextCharFormat::AlignNormal);
 
-ui -> textEdit -> mergeCurrentCharFormat(format);
 
-}
-
-void MainWindow::on_actionSubscript_triggered() { Superscript -> setChecked(false); QTextCharFormat format;
-
-    if(Subscript -> isChecked())
-        format.setVerticalAlignment(QTextCharFormat::AlignSubScript);
-    else
-        format.setVerticalAlignment(QTextCharFormat::AlignNormal);
-
-    ui -> textEdit -> mergeCurrentCharFormat(format);
-
-}
 
 # Issues/Future-Work
 1. Warning dialog-box will not be displayed to save the work before closing the tab.
